@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+body {
+    background-color: #999;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    padding: 40px;
+}
+.photo-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 20px;
+    max-width: 800px;
+}
+.merged {
+    grid-column: span 2;
+}
+.photo-gallery figcaption {
+    margin-top: 10px;
+    font-style: italic;
+    color: #333;
+}
+.secondary-bg {
+    background-color: #333;
+}
+.svg-light-fill {
+    color:#fff;
+}
+.photo-gallery h1, img, svg {
+    border-radius: 10px;
+    max-height: 225px;
+}
+.photo-gallery > * {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
