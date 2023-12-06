@@ -1,0 +1,33 @@
+input {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+legend {
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+label {
+    padding-top: 50px;
+}
+fieldset {
+    max-width: 250px;
+    padding-left: 50px;
+}
+form {
+    background-color: antiquewhite;
+    border: 2px solid;
+    max-width: 300px;
+}
+button {
+    cursor: pointer;
+}
+select {
+    cursor: pointer;
+}
+input:user-invalid {
+    border-color: red;
+}
+.req {
+    color: red;
+}

@@ -1,0 +1,127 @@
+
+:root{
+    --header-footer-color: #2E362F;
+    --siderbar-color: #304A36;
+    --background-color: #020D04;
+    --primary-text-color: #0BDB38;
+    --secondary-text-color: #FFFFFF;
+    --border-color: #367844;
+    --desktop-breakpoint: 1200px;
+    --smartphone-breakpoint: 320px;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Roboto Mono';
+}
+#sidebar{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--siderbar-color);
+    border-right: 4px solid;
+    border-right-color: var(--border-color);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+ul{
+    list-style-type: none;
+}
+#sidebar > ul > li {
+    margin-top: 5px;
+    color: var(--secondary-text-color);
+}
+#sidebar-title {
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.content-section {
+    display: flex;
+    flex-direction: row;
+}
+main {
+    background-color: var(--background-color);
+    color: var(--primary-text-color);
+    font-size: 16px;
+    text-align: center;
+}
+main > h2 {
+    font-size: 24px;
+    text-align: left;
+    padding-left: 20px;
+    padding-bottom: 20px;
+    padding-top: 15px;
+}
+main > h3 {
+    font-size: 22px;
+    padding-left: 20px;
+    padding-bottom: 15px;
+    padding-top: 20px;
+}
+main > p {
+    margin-top: 10px;
+    padding-left: 120px;
+    padding-right: 120px;
+}
+.header{
+    text-align: center;
+    background-color: var(--header-footer-color);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 4px solid;
+    border-bottom-color: var(--border-color);
+}
+nav > ul > li{
+    display: inline;
+    font-size: 20;
+    color: var(--secondary-text-color);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+h1 {
+    font-size: 28px;
+    color: var(--primary-text-color);
+    padding-bottom: 10px;
+    
+}
+footer {
+    background-color: var(--header-footer-color);
+    color: var(--secondary-text-color);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    border-top: 4px solid;
+    border-top-color: var(--border-color);
+}
+a {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+a:hover {
+    text-decoration:underline;
+}
+
+img {
+    border: 6px solid;
+    border-color: var(--border-color);
+    border-radius: 25px;
+    max-width: min(100%, 450px);
+    height: auto;
+}
+#landing-page-main > img {
+    max-height: 550px;
+}
+@media (max-width: 320px) {
+    main {
+      padding: 0;
+    }
+    #sidebar {
+      
+    }
+  }
