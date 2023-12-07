@@ -17,9 +17,6 @@ body{
     font-family: 'Roboto Mono';
 }
 #sidebar{
-    display: flex;
-    flex: 1;
-    flex-direction: column;
     text-align: center;
     background-color: var(--siderbar-color);
     border-right: 4px solid;
@@ -35,39 +32,41 @@ ul{
 #sidebar > ul > li {
     margin-top: 5px;
     color: var(--secondary-text-color);
+    font-size: 1rem;
 }
 #sidebar-title {
     padding-bottom: 10px;
-    font-size: 20px;
+    font-size: 1.5rem;
 }
 
-.content-section {
+.flexbox {
     display: flex;
     flex-direction: row;
 }
 main {
     background-color: var(--background-color);
     color: var(--primary-text-color);
-    font-size: 16px;
+    font-size: 1rem;
     text-align: center;
 }
 main > h2 {
-    font-size: 24px;
+    font-size: 2rem;
     text-align: left;
     padding-left: 20px;
     padding-bottom: 20px;
     padding-top: 15px;
 }
 main > h3 {
-    font-size: 22px;
+    font-size: 1.75rem;
     padding-left: 20px;
     padding-bottom: 15px;
-    padding-top: 20px;
+    padding-top: 15px;
 }
 main > p {
     margin-top: 10px;
     padding-left: 120px;
     padding-right: 120px;
+    padding-bottom: 20px;
 }
 .header{
     text-align: center;
@@ -79,13 +78,13 @@ main > p {
 }
 nav > ul > li{
     display: inline;
-    font-size: 20;
+    font-size: 1.15rem;
     color: var(--secondary-text-color);
     margin-left: 10px;
     margin-right: 10px;
 }
 h1 {
-    font-size: 28px;
+    font-size: 2rem;
     color: var(--primary-text-color);
     padding-bottom: 10px;
     
@@ -111,17 +110,27 @@ img {
     border: 6px solid;
     border-color: var(--border-color);
     border-radius: 25px;
-    max-width: min(100%, 450px);
+    max-width: min(100%, 700px);
     height: auto;
 }
 #landing-page-main > img {
     max-height: 550px;
 }
-@media (max-width: 320px) {
+strong {
+    text-decoration: underline;
+}
+pre code {
+    font-size: 1rem;
+    display: block;
+    max-height: 20ch;
+    overflow: auto;
+    
+}
+/*@media (max-width: 320px) {
     main {
       padding: 0;
     }
     #sidebar {
       
     }
-  }
+  }*/
