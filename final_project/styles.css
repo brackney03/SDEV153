@@ -37,8 +37,19 @@ ul{
 #sidebar-title {
     padding-bottom: 10px;
     font-size: 1.5rem;
+    color: var(--secondary-text-color);
 }
-
+#sidebar-landing-page {
+    text-align: center;
+    background-color: var(--siderbar-color);
+    border-top: 4px solid;
+    border-top-color: var(--border-color);
+}
+#sidebar-landing-page > ul > li {
+    display: inline;
+    margin-left: 10px;
+    margin-right: 10px;
+}
 .flexbox {
     display: flex;
     flex-direction: row;
@@ -126,11 +137,85 @@ pre code {
     overflow: auto;
     
 }
-/*@media (max-width: 320px) {
+button {
+ margin-bottom: 15px;
+ padding: 15px;
+ font-size: 1rem;
+ background-color: var(--primary-text-color);
+ border-color: var(--background-color);
+}
+button:hover {
+    background-color: var(--border-color);
+}
+#messages-body {
+    background-color: var(--background-color);
+}
+input {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+legend {
+    color: var(--primary-text-color);
+
+}
+label {
+    color: var(--secondary-text-color);
+}
+
+.req {
+    color: red;
+}
+fieldset {
+    padding-left: 45%;
+}
+#message-box {
+    margin-bottom: 5px;
+}
+
+
+@media (max-width: 320px) {
     main {
       padding: 0;
     }
-    #sidebar {
-      
+    .flexbox {
+      display: inline;
     }
-  }*/
+    #sidebar {
+        border-right: none;
+        border-bottom: 4px solid;
+        border-bottom-color: var(--border-color);
+    }
+    #sidebar > ul > li {
+        display: inline;
+    }
+    main > p {
+        font-size: 0.75rem;
+        text-align: left;
+        padding: 0;
+        padding-left: 10px;
+    }
+    main > h3 {
+        font-size: 1.25rem;
+    }
+    img {
+        max-width: 300px
+    }
+  }
+
+@media (min-width: 1200px) {
+    main > p {
+        font-size: 1.25rem;
+    }
+    main > h3 {
+        font-size: 2rem;
+    }
+    main > h2 {
+        font-size: 2.25rem;
+    }
+    h1 {
+        font-size: 2.75rem;
+    }
+
+   
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
+        <!--TO DO: Change title later-->
+        <title>Message Me - Code Cafeteria: Gamer's Digest</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
+    </head>
+    <body id="messages-body">
+        <div class="header">
+            <h1>Code Cafeteria: Gamer's Digest</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="favorites.html">My Favorites</a></li>
+                    <li><a href="upcoming.html">Upcoming</a></li>
+                    <li><a href="projects.html">My Projects</a></li>
+                </ul>
+            </nav>
+        </div>
+        <form action="test.php" method="post">
+            <fieldset>
+                <legend>Send a Message</legend>
+                <Label>
+                    Name<span class="req">*</span>
+                    <input type="Text" id="name" name="name" placeholder="Name" title="Name is required." required>
+                </Label>
+                <label>
+                    Email<span class="req">*</span>
+                    <input type="email" id="email" name="email" placeholder="Email Address" title="Valid email is required." required>
+                </label>
+                <label>
+                    Message
+                </label><br>
+                <textarea id="message-box" name="message-box" placeholder="Type your message here!" rows="1" cols="21"> </textarea><br>
+                <button type="reset">Reset</button>
+                <button type="submit">Submit</button>
+            </fieldset>
+            
+        </form>
+    </body>
+</html>
