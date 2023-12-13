@@ -2,8 +2,10 @@
 <html lang="en-US">
     <head>
         <link rel="stylesheet" type="text/css" href="styles.css">
-        <link href='https://fonts.googleapis.com/css?family=Roboto Mono' rel='stylesheet'>
-        <!--TO DO: Change title later-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet"> 
+        
         <title>My Projects - Code Cafeteria: Gamer's Digest</title>
         <link rel="icon" type="image/x-icon" href="images/favicon-32x32.png">
     </head>
@@ -24,7 +26,7 @@
             <ul>
                 <li id="sidebar-title">Links!</li>
                 <li><a href="https://www.github.com/brackney03">Github</a></li>
-                <li><a href="https://www.tumblr.com">Tumblr</li>
+                <li><a href="https://www.tumblr.com">Tumblr</a></li>
                 <li><a href="https://www.youtube.com">YouTube</a></li>
                 <li><a href="#">Other Blogs</a></li>
             </ul>
@@ -46,7 +48,7 @@
             <code>
 void Update()
     {
-    enemyCount = FindObjectsOfType<Enemy>().Length;
+    enemyCount = FindObjectsOfType[Enemy]().Length;
         if (enemyCount == 0)
         {
             waveNumber++;
